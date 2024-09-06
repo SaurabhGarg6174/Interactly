@@ -1,7 +1,7 @@
 const axios = require('axios');
 
-const API_KEY = 'IWAfAh-7_8a9esJQ7Lk2Xg';
-const BASE_URL = 'https://student-751753787357174933.myfreshworks.com/';
+const API_KEY = process.env.API_KEY;
+const BASE_URL = process.env.BASE_URL;
 
 const createContact = async (contact) => {
     try {
